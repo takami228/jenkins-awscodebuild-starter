@@ -31,7 +31,7 @@ AWS CodeBuildのプロジェクトをつくる。
 * プロジェクト
   * プロジェクト名 : project name
 * ソース
-  * 現在のソース : GitLabのターゲットレポジトリ
+  * 現在のソース : GitLabのターゲットレポジトリ(GitHub Enterpriseを選択する)
 * 環境
   * 現在のイメージ : ビルドに使うイメージを設定、ECRのイメージも選択可能
   * 現在のビルド仕様 : buildspec.ymlを使用
