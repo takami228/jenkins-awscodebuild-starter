@@ -1,1 +1,30 @@
-# To Do
+version: 0.2
+
+phases:
+  install:
+    # To Do
+    commands: 
+      - ./setup.sh
+  build:
+    # To Do
+    commands:
+      - ./build.sh
+      - ./test.sh
+  package:
+    # To Do
+    commands:
+      - |
+        if [ -z "${BRANCH_NAME%%release/*}" ]; then
+          ./package.sh
+        fi
+  artifacts:
+    # To Do
+    commands:
+      - |
+        if [ -z "${BRANCH_NAME%%release/*}" ]; then
+          aws s3 cp /path/to/artifacts "s3://path_to_artifacts_bucket/${BRANCH_NAME#release/}/artifacts" # To Do
+        fi
+
+cache:
+  paths:
+    - /path/to/cache/* # To Do
