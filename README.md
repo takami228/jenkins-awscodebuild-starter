@@ -116,7 +116,7 @@ Jenkinsの設定でノードの設定で同時実行数を適当な値に設定�
 
 # Links
 
-* xxx
+* https://takamii.hatenablog.com/entry/2018/09/07/234509
 * https://docs.aws.amazon.com/ja_jp/codebuild/latest/userguide/jenkins-plugin.html
 * https://qiita.com/takamii228/items/3598f403518c296f93f3
 * https://qiita.com/takamii228/items/a0f4b2ef8107d6d3cd34
