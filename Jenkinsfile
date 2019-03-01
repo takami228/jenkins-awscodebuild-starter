@@ -3,11 +3,11 @@ pipeline {
 
     post {
         success {
-            mattermostSend color: "good", message: ":smile: [${env.JOB_NAME}](${env.BUILD_URL}) was succeeded."
+            mattermostSend color: "good", message: ":smile: [${env.JOB_NAME}](${env.BUILD_URL}) was succeeded. Job Duration time is about ${currentBuild.durationString.replace(' and counting', '')}."
         }
         failure {
             updateGitlabCommitStatus name: 'codebuild', state: 'failed'
-            mattermostSend color: "danger", message: ":dizzy_face: [${env.JOB_NAME}](${env.BUILD_URL}) was failed."
+            mattermostSend color: "danger", message: ":dizzy_face: [${env.JOB_NAME}](${env.BUILD_URL}) was failed. Job Duration time is about ${currentBuild.durationString.replace(' and counting', '')}."
         }
     }
 
